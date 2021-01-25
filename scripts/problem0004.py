@@ -23,7 +23,7 @@ def largestPalindrome(digits=2):
                     ans = n1*n2
             n2 += 1
         n1 += 1
-        n2 = start
+        n2 = n1
     return ans
 
 if __name__ == "__main__":
