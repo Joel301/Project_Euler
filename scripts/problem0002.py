@@ -1,4 +1,3 @@
-
 #! python3
 # -*- coding: utf-8 -*-
 
@@ -16,7 +15,7 @@ four million[4000000], find the sum of the even-valued terms.
 
 
 #fibonacci list generator
-def fibonacci(limit=4000000):
+def fibonacci(limit=89):
     lst = [1,2]
     n1, n2 = 1, 2
     while(n2 < limit):
@@ -26,13 +25,11 @@ def fibonacci(limit=4000000):
         lst.append(n)
     return lst
 
-
-
 # main function same aproach as problem0001
-def compute():
-    ans = sum(x for x in fibonacci(4000000) if x % 2 == 0)
-    return str(ans)
+def compute(v = 4000000):
+    ans = sum(x for x in fibonacci(v) if x % 2 == 0)
+    return ans
 
 
 if __name__ == "__main__":
-    print(compute())
+    print(compute(4000000))

@@ -1,4 +1,3 @@
-  
 #! python3
 #-*- coding: utf-8 -*-
 
@@ -12,10 +11,10 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 #Simple solution
-def compute():
-	ans = sum(x for x in range(1000) if (x % 3 == 0 or x % 5 == 0))
-	return str(ans)
+def compute(below = 10):
+	ans = sum(x for x in range(below) if (x % 3 == 0 or x % 5 == 0))
+	return ans
 
 
 if __name__ == "__main__":
-	print(compute())
+	print(compute(1000))
