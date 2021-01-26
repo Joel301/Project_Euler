@@ -11,7 +11,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 
-def largestPalindrome(digits=2):
+def largestPalindrome(digits):
     start = int('1'.ljust(digits, '0'))
     n1, n2 = start, start
     ans = 0

@@ -10,7 +10,7 @@ class TestProblem0002(unittest.TestCase):
         result = scripts.problem0002.fibonacci()
         self.assertEqual(result,[1, 2, 3, 5, 8, 13, 21, 34, 55, 89])
     
-    def test_fibComputed(self):
+    def test_fibResult(self):
         # result = scripts.problem0002.compute(0)
         # self.assertEqual(result,231)
         result = scripts.problem0002.compute(4000000)

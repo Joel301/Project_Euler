@@ -23,7 +23,7 @@ def primeFactors(number= 13195):
 #main function
 def compute():
 	ans = [x for x in primeFactors(600851475143)]
-	return str(ans)
+	return ans
 
 
 if __name__ == "__main__":
